@@ -1,11 +1,14 @@
-import React from "react";
+import React from 'react';
+// Import image using relative path from About.js to user.js
+import { image } from '../data/user';  // Go up one directory and then into the data folder
 
 function About() {
   return (
-    <div id="about">
-      <h2>About Me</h2>
-      <p>I Made This</p>
-      <img src={image} alt="I made this" />
+    <div className="about">
+      <h1>About Me</h1>
+      <img src={image} alt="Profile" /> {/* Display the profile image */}
     </div>
   );
 }
+
+export default About;
